@@ -1,0 +1,50 @@
+#pictures{
+    padding: 80px 0px;
+
+    .pictures{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        gap: 40px;
+        .img1{
+            position: relative;
+            //  opacity: .6;
+          
+            .blok-text{
+                position: absolute;
+                bottom: 0;
+                // color: white;
+                p{
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                span{
+                    font-size: 40px;
+                }
+            }
+          &:hover{
+            overflow: hidden;
+            img{
+                scale:1.1;
+                
+                transition: all 1s ease;
+            }
+          }
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+    #pictures{
+        .pictures{
+            grid-template-columns: repeat(2,auto);
+        }
+    }
+}
+
+@media screen and (min-height:0) and (max-width:625px) {
+    #pictures{
+        .pictures{
+            grid-template-columns: auto;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+#element{
+    padding: 70px 0px;
+    .element{
+        display: grid;
+        grid-template-columns:repeat(3,auto);
+        gap: 40px;
+        .element-content{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            i{
+                font-size: 40px;
+                color: $color1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+    #element{
+        .element{
+            grid-template-columns: repeat(2,auto);
+        }
+    }
+}
+
+@media screen and (max-width:625px) {
+    #element{
+        .element{
+            grid-template-columns:auto;
+        }
+    }
+}
